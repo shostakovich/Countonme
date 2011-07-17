@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'newrelic_rpm'
 require 'date'
 require './lib/Countdown'
 

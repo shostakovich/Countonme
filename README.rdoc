@@ -2,8 +2,15 @@
 
 Countonme is a simple application that you can use to generate countdowns.
 
+== What does it do?
+
+For a high level description of what countonme does look into the /features folder.
+There you can find a very detailed set off acceptance tests, that should even non-developers
+should understand without any problems.
+
 == Deploying countonme to Heroku
 
     git clone git@github.com:shostakovich/Countonme.git
     heroku create
     git push heroku
+
