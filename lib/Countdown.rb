@@ -4,6 +4,9 @@ class Countdown
   HOURS_IN_A_DAY = 24
 
   def initialize(end_time)
+    if end_time < Time.now
+      throw new ArgumentError "end_time must be smaller then current time"
+    end
     @ends_at = end_time
   end
 

@@ -3,5 +3,9 @@
   %head
     %title Countdown
     %link{:href=> "/css/compact.css", :rel=> "stylesheet", :type=>"text/css"}
-  %body
-    = yield
+  -if @expired
+    %body.expired
+      = yield
+  - else
+    %body
+      = yield

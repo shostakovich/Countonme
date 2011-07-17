@@ -15,6 +15,11 @@ body{
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
+body.expired{
+    -moz-opacity:0.5;
+    opacity: 0.5;
+}
+
 body h1{
 	position: absolute;
 	top: 49px;
