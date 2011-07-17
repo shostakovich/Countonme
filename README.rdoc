@@ -1,0 +1,9 @@
+== Welcome to Countonme
+
+Countonme is a simple application that you can use to generate countdowns.
+
+== Deploying countonme to Heroku
+
+    git clone git@github.com:shostakovich/Countonme.git
+    heroku create
+    git push heroku
