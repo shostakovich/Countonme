@@ -1,0 +1,78 @@
+html{
+	background: #FFF;
+	margin: 0px;
+}
+
+body{
+	position: relative;
+	margin: 0;
+	background: #CCC;
+	height: 60px;
+	border-radius:6px;
+	padding: 5px;
+	width: 210px;
+	height: 63px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+body h1{
+	position: absolute;
+	top: 49px;
+	margin: 0;
+	font-size: 18px;
+	color: #000;
+}
+
+body ul{
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+body ul li{
+	box-shadow: 3px 3px 5px #AAA;
+	position: relative;
+	margin: 0;
+	color: #FFF;
+	float: left;
+	background: #000;
+	height: 100%;
+	padding-left: 7px;
+	text-align: left;
+	border-radius: 6px;
+	font: 36px/40px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+body ul li#hours
+{
+	width: 45px;
+	padding-right: 45px;
+
+}
+
+body ul li#days
+{
+	width:67px;
+	margin-right: 4px;
+	padding-right: 35px;
+	text-align: right;
+}
+
+body ul li span{
+	position: absolute;
+	line-height: 9px;
+	font-size: 9px;
+	top: 5px;
+	right: 8px;
+}
+
+body ul li div{
+	position: absolute;
+	width: 100%;
+	background: rgba(0,0,0,0.84);
+	height: 1px;
+	top:20px;
+	left: 0;
+}
