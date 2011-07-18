@@ -1,11 +1,17 @@
-%h1
-  = @counter_name
-%ul
-  %li#days
-    = @days
-    %span Tage
-    %div#line
-  %li#hours
-    = @hours
-    %span#hours Stunden
-    %div#line
+!!! 5
+%html
+  %head
+    %title Countdown
+    %link{:href=> "/css/compact.css", :rel=> "stylesheet", :type=>"text/css"}
+    %body{:class => @expired ? "expired" : ""}
+      %h1
+        = @counter_name
+      %ul
+        %li#days
+          = @days
+          %span Tage
+          %div#line
+        %li#hours
+          = @hours
+          %span#hours Stunden
+          %div#line

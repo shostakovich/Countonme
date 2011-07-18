@@ -1,8 +1,16 @@
 require 'rubygems'
 require 'sinatra'
-require 'newrelic_rpm'
 require 'date'
+require 'sass'
 require './lib/Countdown'
+
+get '/' do
+  haml :new
+end
+
+post '/create' do
+  haml :create
+end
 
 get '/compact' do
   @counter_name = params[:title]
@@ -19,5 +27,9 @@ get '/compact' do
     @hours = 0
     @expired = true
   end
-  haml :counter
+  haml :counter, :layout => false
+end
+
+get '/stylesheet.css' do
+  sass :stylesheet
 end
