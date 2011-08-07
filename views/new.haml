@@ -1,6 +1,9 @@
 %h1 Create your own countdown
 
 %form{:method => "post", :action => "/create"}
+  %label{:for => "description"} Description
   %input{:name => "description", :type => "text", :size => "40"}
+
+  %label{:for => "end-date"} Ends at
   %input{:name => "end-date", :type => "datetime", :size => "30"}
-  %input{:type => "submit", :value => "Generate"}
+  %input.submit{:type => "submit", :value => "Generate"}

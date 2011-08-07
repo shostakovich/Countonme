@@ -1,2 +1,10 @@
-%h1 Use this code to embed the countdown
+%h2 That's a nice counter
 
+%iframe{:src => @url, :width => 265, :height => 75, :frameborder => 0, :scrolling => "no", :border => 0}
+
+
+%p
+  Copy & paste this into your template:
+
+%p#code
+  = escape_html "<iframe src='#{@url}' width='265' height='75' frameborder='0' scrolling='no' border='0'></iframe>"

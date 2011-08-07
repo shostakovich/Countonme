@@ -9,6 +9,9 @@ get '/' do
 end
 
 post '/create' do
+  @description = params["description"]
+  @end_date = params["end-date"]
+  @url = "/compact?title=#{@description}&end_date=#{@end_date}"
   haml :create
 end
 
